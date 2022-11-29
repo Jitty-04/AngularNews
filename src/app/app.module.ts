@@ -10,6 +10,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SearchNewsComponent } from './search-news/search-news.component';
 import { DeleteNewsComponent } from './delete-news/delete-news.component';
+import {HttpClientModule} from '@angular/common/http'
 
 const myRoter:Routes=[
   {
@@ -43,7 +44,9 @@ const myRoter:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoter),
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
