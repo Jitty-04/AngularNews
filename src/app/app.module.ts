@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { ViewNewsComponent } from './view-news/view-news.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RouterModule, Routes } from '@angular/router';
+import { SearchNewsComponent } from './search-news/search-news.component';
 
 const myRoter:Routes=[
   {
@@ -17,6 +18,10 @@ const myRoter:Routes=[
   {
     path:"view",
     component:ViewNewsComponent
+  },
+  {
+    path:"search",
+    component:SearchNewsComponent
   }
 ]
 
@@ -25,7 +30,8 @@ const myRoter:Routes=[
     AppComponent,
     AddNewsComponent,
     ViewNewsComponent,
-    NavigationComponent
+    NavigationComponent,
+    SearchNewsComponent
   ],
   imports: [
     BrowserModule,
